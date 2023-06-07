@@ -1,0 +1,14 @@
+.movieTitle {
+    font-weight: bold;
+    list-style-type: none;
+    line-height: 3;
+    font-size: 20px;
+}
+
+.movieTitleLong {
+    color: rgb(173, 34, 173);
+}
+
+.movieTitleShort {
+    color: rgb(1, 1, 255);
+}
