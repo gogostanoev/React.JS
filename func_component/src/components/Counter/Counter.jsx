@@ -7,7 +7,7 @@
 // Create button "Reset" and when clicked should set the count to 0.
 // Create a "span" element next to the count that displays the word "Even" if the current count is an even number, and "Odd" if count is odd number.
 // Render the Count component in the App Component.
-// Add input type:number, when the field changes on user input, update the count state to the new value. (HINT: use onChange event)
+// Add input type:number, when the field changes on user input, update the count state to the new value. (HINT: use onChange event.)
 
 
 import React from "react";
