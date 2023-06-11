@@ -1,0 +1,29 @@
+.counter {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(156, 143, 172);
+    line-height: 1.8;
+    text-transform: uppercase;
+    padding-top: 90px;
+    padding-bottom: 87px;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    height: 32px;
+    padding: 0px 16px;
+    border-radius: 50px;
+    background-color: #ffffff36;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+input {
+    border-radius: 30px;
+    height: 30px;
+    font-size: large;
+    text-align: center;
+}
