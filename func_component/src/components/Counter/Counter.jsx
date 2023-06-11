@@ -46,11 +46,22 @@ class Counter extends React.Component {
         });
     };
 
+    // inputValue = (e) => {
+    //     this.setState({
+    //         number: parseInt(e.target.value)
+    //     })
+    // }
+
     inputValue = (e) => {
-        this.setState({
-            number: parseInt(e.target.value)
-        })
-    }
+        let newValue = parseInt(e.target.value);
+        if(isNaN(newValue)) {
+            newValue = 0;
+        };
+
+        this.state({
+            number: Math.max(newValue, 0)
+        });
+    };
 
     render() {
         const isEven = this.state.number % 2 === 0;
