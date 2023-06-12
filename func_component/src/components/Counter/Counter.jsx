@@ -58,7 +58,7 @@ class Counter extends React.Component {
             newValue = 0;
         };
 
-        this.state({
+        this.setState({
             number: Math.max(newValue, 0)
         });
     };
