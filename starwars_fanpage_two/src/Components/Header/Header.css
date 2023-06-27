@@ -1,0 +1,28 @@
+.navigation {
+    list-style: none;
+    background-color: rgb(201, 201, 197);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 50px; */
+}
+
+.navigation h3 {
+    margin-left: 50px; 
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    width: 20%;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.navlinks>li {
+    cursor: pointer;
+}
+
+.container {
+    margin: 0px 50px;
+}

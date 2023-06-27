@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'title-font-ttf';
+    src: url("../../fonts/titleFont.ttf") format('truetype');
+}
+
+
+#title {
+    text-align: center;
+    margin: 30px;
+}
+
+#title>h1 {
+    font-family: 'title-font-ttf', arial;
+}
+
+.two-buttons>button {
+    cursor: pointer;
+    background-color: aliceblue;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}

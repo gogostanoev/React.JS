@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'title-font-ttf';
+    src: url("../../fonts/titleFont.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'text-font-ttf';
+    src: url("../../fonts/textFont.ttf");
+}
+
+.people-info {
+    line-height: 1.8;
+}
+
+.people-info>h2 {
+    font-family: 'title-font-ttf', arial;
+}
+
+.people-info>p {
+    font-family: 'text-font-ttf', arial;
+}
+
+.people-info>button {
+    cursor: pointer;
+    background-color: aliceblue;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
