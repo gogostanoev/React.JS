@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'title-font-ttf';
+    src: url("../../fonts/titleFont.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'text-font-ttf';
+    src: url("../../fonts/textFont.ttf");
+}
+
+.planet-info {
+    line-height: 1.8;
+}
+
+.planet-info>h2 {
+    font-family: 'title-font-ttf', arial; 
+}
+
+.planet-info>p {
+    font-family: 'text-font-ttf';
+}

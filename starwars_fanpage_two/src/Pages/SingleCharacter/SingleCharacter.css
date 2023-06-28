@@ -8,13 +8,27 @@
     src: url("../../fonts/textFont.ttf");
 }
 
-/* .currentChar */
+.currentChar {
+    line-height: 1.8;
+}
+
+.currentChar>h1 {
+    text-align: center;
+}
+
+.currentChar>h2 {
+    font-family: 'title-font-ttf', arial;
+}
+
+.currentChar>p {
+    font-family: 'text-font-ttf', arial;
+}
 
 button {
-    cursor: "pointer";
-    background-color: "aliceblue";
-    padding: "20px";
-    width: "fit-content";
-    border: "1px solid grey";
-    border-radius: "5px";
+    cursor: pointer;
+    background-color: aliceblue;
+    padding: 7px;
+    width: fit-content;
+    border: 1px solid grey;
+    border-radius: 5px;
 }

@@ -32,7 +32,7 @@ export const SingleCharacter = () => {
     }, [id]);
 
     if (!character || !homeworld) {
-        return <div>Loading...</div>;
+        return <h2 className="loading">Loading...</h2>;
     }
 
     return (

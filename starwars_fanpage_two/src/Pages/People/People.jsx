@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { PeopleInfo } from "../../Components/PeopleInfo/PeopleInfo";
-
-import "./People.css"
+import "./People.css";
 
 export const People = () => {
     const [people, setPeople] = useState([]);
@@ -14,15 +13,15 @@ export const People = () => {
         try {
             const res = await fetch(URL);
             const data = await res.json();
-            console.log("first data", data)
+            console.log("first data", data);
             console.log(data.results);
-            setPeople(data.results)
+            setPeople(data.results);
             setPreviousPage(data.previous);
             setNextPage(data.next);
         } catch (error) {
             setErrorMessage(error.message);
             throw new Error(error);
-        };
+        }
     };
 
     useEffect(() => {
@@ -31,14 +30,14 @@ export const People = () => {
     }, []);
 
     const handleNextPage = useCallback(() => {
-        if (!nextPage) return
+        if (!nextPage) return;
         getAllChar(nextPage);
     }, [nextPage]);
 
     const handlePreviousPage = useCallback(() => {
         if (previousPage !== null) {
             getAllChar(previousPage);
-        };
+        }
     }, [previousPage]);
 
     return (
@@ -56,8 +55,12 @@ export const People = () => {
                         ))}
                     </div>
                     <div className="two-buttons">
-                        <button onClick={handlePreviousPage} disabled={!previousPage}>Previous</button>
-                        <button onClick={handleNextPage} disabled={!nextPage}>Next</button>
+                        <button onClick={handlePreviousPage} disabled={!previousPage}>
+                            Previous
+                        </button>
+                        <button onClick={handleNextPage} disabled={!nextPage}>
+                            Next
+                        </button>
                     </div>
                 </>
             ) : (
