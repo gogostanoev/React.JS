@@ -36,4 +36,4 @@ export const TodoForm = () => {
             <button onClick={handleAddTodo}>Add Task</button>
         </div>
     )
-}
+};

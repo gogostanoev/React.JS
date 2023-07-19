@@ -71,4 +71,4 @@ export const Todo = () => {
             </div>
         </div>
     )
-}
+};
